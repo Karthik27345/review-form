@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form</title>
+    <!-- Tailwind Css link -->
+      <script src="https://cdn.tailwindcss.com"></script>
+
+      <!-- Javascript Manipulation -->
+       <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+   
+<div class="bg-white p-8 rounded-lg shadow-lg w-3/4">
+        <h1 class="text-center text-2xl font-serif font-bold mb-5">Drop a review</h1>
+
+        <form id="review" class="space-y-4">
+            <div>
+            <textarea
+            placeholder="Tell us about your experience..!"
+            id="text_value" 
+            rows="6"
+            class="w-full border border-gray-400 rounded px-3 py-2 focus:outline-none focus:border-yellow-600" ></textarea>
+
+
+            <p class="text-right text-sm text-gray-400 mt-2" id="wordcount">0 / 200</p>
+
+<span class="reviewerror text-red-500 text-sm hidden">Oops! Your review is too long .Limit is 200 Words</span>
+
+
+
+            </div>
+
+
+            <button type="submit"
+            id="submitbtn" 
+            class=" w-full bg-blue-700 text-white py-3 rounded hover:bg-blue-600 transition-colors">Submit</button>
+
+
+
+
+        </form>
+
+    </div>
+
+</body>
+</html>
